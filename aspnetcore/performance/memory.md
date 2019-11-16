@@ -206,7 +206,7 @@ The following image shows the memory profile while invoking the `fileprovider` A
 
 The preceding chart shows an obvious issue with the implementation of this class, as it keeps increasing memory usage. This is a known problem that is being tracked in [this issue](https://github.com/aspnet/Home/issues/3110).
 
-The same leak could be happen in user code, by one of the following:
+The same leak could happen in user code, by one of the following:
 
 * Not releasing the class correctly.
 * Forgetting to invoke the `Dispose`method of the dependent objects that should be disposed.
